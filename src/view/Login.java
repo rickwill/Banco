@@ -5,6 +5,8 @@
  */
 package view;
 
+import java.awt.Dimension;
+
 /**
  *
  * @author Richard
@@ -106,7 +108,7 @@ public class Login extends javax.swing.JInternalFrame {
     public void setPosicao()
     {
         Dimension d = this.getDesktopPane().getSize();
-        this.setLocation((d.width - this.getSize().width) / 2, (d.height - thi));
+        this.setLocation((d.width - this.getSize().width) / 2, (d.height - this.getHeight()));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
