@@ -17,6 +17,8 @@ public class Banco
     {
         MenuPrincipal menu = new MenuPrincipal();
         menu.setVisible(true);
+        Usuario U = new Usuario();
+        U.setVisible(true);
     } 
 }
 
