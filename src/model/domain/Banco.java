@@ -6,6 +6,7 @@
 package model.domain;
 
 import view.MenuPrincipal;
+import view.Usuario;
 
 /**
  * @author RickWill, Nandão & UlysS
