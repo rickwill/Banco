@@ -94,11 +94,17 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Entrar"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_entrarActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lbl_cadUser">
       <Properties>
         <Property name="text" type="java.lang.String" value="Cadastrar Usuario"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lbl_cadUserMouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lbl_esqSenha">
       <Properties>

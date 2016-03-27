@@ -11,12 +11,14 @@ import java.awt.Dimension;
  *
  * @author Richard
  */
-public class Login extends javax.swing.JInternalFrame {
+public class Login extends javax.swing.JInternalFrame
+{
 
     /**
      * Creates new form Login
      */
-    public Login() {
+    public Login()
+    {
         initComponents();
     }
 
@@ -45,8 +47,18 @@ public class Login extends javax.swing.JInternalFrame {
         lbl_senha.setText("Senha:");
 
         btn_entrar.setText("Entrar");
+        btn_entrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_entrarActionPerformed(evt);
+            }
+        });
 
         lbl_cadUser.setText("Cadastrar Usuario");
+        lbl_cadUser.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lbl_cadUserMouseClicked(evt);
+            }
+        });
 
         lbl_esqSenha.setText("Esqueci a Senha");
 
@@ -105,6 +117,16 @@ public class Login extends javax.swing.JInternalFrame {
     private void pwf_senhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pwf_senhaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_pwf_senhaActionPerformed
+
+    private void lbl_cadUserMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_cadUserMouseClicked
+        //CadastroCliente CC = new CadastroCliente();
+    }//GEN-LAST:event_lbl_cadUserMouseClicked
+    
+    private void btn_entrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_entrarActionPerformed
+        Usuario U = new Usuario();
+        U.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btn_entrarActionPerformed
     public void setPosicao()
     {
         Dimension d = this.getDesktopPane().getSize();
