@@ -126,19 +126,20 @@ public class Login extends javax.swing.JInternalFrame
     }//GEN-LAST:event_pwf_senhaActionPerformed
 
     private void lbl_cadUserMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_cadUserMouseClicked
-        //CadastroCliente CC = new CadastroCliente();
+        //Cadastro_Cliente CC = new Cadastro_Cliente();
     }//GEN-LAST:event_lbl_cadUserMouseClicked
     
     private void btn_entrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_entrarActionPerformed
-        Usuario U = new Usuario();
+        Usuario U = new Usuario(painelx);
         painelx.add(U);
         U.setSize(500,500);
         U.setVisible(true);
-        this.setVisible(false);  
+        this.setVisible(false);
     }//GEN-LAST:event_btn_entrarActionPerformed
-    public void setPosicao() {
-    Dimension d = this.getDesktopPane().getSize();
-    this.setLocation((d.width - this.getSize().width) / 2, (d.height - this.getSize().height) / 2); 
+    public void setPosicao()
+    {
+        Dimension d = this.getDesktopPane().getSize();
+        this.setLocation((d.width - this.getSize().width) / 2, (d.height - this.getSize().height) / 2); 
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

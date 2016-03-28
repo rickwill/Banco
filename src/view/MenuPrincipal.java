@@ -9,7 +9,8 @@ package view;
  *
  * @author Richard
  */
-public class MenuPrincipal extends javax.swing.JFrame {
+public class MenuPrincipal extends javax.swing.JFrame
+{
 
     /**
      * Creates new form MenuPrincipal
