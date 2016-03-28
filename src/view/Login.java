@@ -136,7 +136,10 @@ public class Login extends javax.swing.JInternalFrame
         U.setVisible(true);
         this.setVisible(false);  
     }//GEN-LAST:event_btn_entrarActionPerformed
-    
+    public void setPosicao() {
+    Dimension d = this.getDesktopPane().getSize();
+    this.setLocation((d.width - this.getSize().width) / 2, (d.height - this.getSize().height) / 2); 
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btn_entrar;

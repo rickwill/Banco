@@ -22,7 +22,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
         Login login = new Login(dpn_menu);
         this.dpn_menu.add(login);
         login.setVisible(true);
-        
+        login.setPosicao();
         
     }
     
