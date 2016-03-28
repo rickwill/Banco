@@ -11,6 +11,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.swing.JOptionPane;
 
 /**
  * @author RickWill, Nandão & UlysS
@@ -30,7 +31,7 @@ public class Conta
     @Column(name = "CC_DG",length = 1,nullable = false)
     private int digitoConta;
     @Column(name = "CC_SALDO",length = 30,nullable = false)
-    private float saldo;
+    private double saldo;
     
     //Construtor
     public Conta(){}
@@ -79,18 +80,18 @@ public class Conta
         this.digitoConta = digitoConta;
     }
 
-    public float getSaldo()
+    public double getSaldo()
     {
         return saldo;
     }
 
-    public void setSaldo(float saldo)
+    public void setSaldo(double saldo)
     {
         this.saldo = saldo;
     }
    
     //Outros Métodos
-    public boolean Debita (float valor)
+    /*public boolean Debita (float valor)
     {
         if (saldo >= valor)
         {
@@ -127,7 +128,34 @@ public class Conta
             System.out.println("Valor Transferido com Sucesso");
             return false;
         }
-    }
+    }*/
+    public void depositar(double valor){
+		saldo = saldo+valor;
+		
+	}
+	
+	public void sacar(double valor){
+		if(valor<saldo){
+		saldo = saldo-valor;
+		}
+		else{
+			JOptionPane.showMessageDialog(null, "Saldo insuficiente :"+ getSaldo());
+		}
+		
+		}
+	
+	public void transferencia(Conta c,double valor){
+		if(valor<saldo){
+			double x = c.getSaldo();
+			c.setSaldo(x+valor);
+			saldo = saldo - valor;
+			JOptionPane.showMessageDialog(null, "Operação realizada com sucesso! ;3");
+		}
+		
+		else{
+			JOptionPane.showMessageDialog(null, "Saldo insuficiente :"+ getSaldo());
+		}
+	}
 
     @Override
     public int hashCode() {
