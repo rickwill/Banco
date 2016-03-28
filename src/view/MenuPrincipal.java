@@ -17,11 +17,15 @@ public class MenuPrincipal extends javax.swing.JFrame {
     public MenuPrincipal()
     {
         initComponents();
+        setExtendedState(MAXIMIZED_BOTH);
         
-        Login login = new Login();
-        this.desktopPane.add(login);
+        Login login = new Login(dpn_menu);
+        this.dpn_menu.add(login);
         login.setVisible(true);
+        
+        
     }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -32,7 +36,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        desktopPane = new javax.swing.JDesktopPane();
+        dpn_menu = new javax.swing.JDesktopPane();
         menuBar = new javax.swing.JMenuBar();
         mnArquivo = new javax.swing.JMenu();
         openMenuItem = new javax.swing.JMenuItem();
@@ -126,11 +130,11 @@ public class MenuPrincipal extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(desktopPane, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
+            .addComponent(dpn_menu, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(desktopPane, javax.swing.GroupLayout.DEFAULT_SIZE, 279, Short.MAX_VALUE)
+            .addComponent(dpn_menu, javax.swing.GroupLayout.DEFAULT_SIZE, 279, Short.MAX_VALUE)
         );
 
         pack();
@@ -185,7 +189,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem copyMenuItem;
     private javax.swing.JMenuItem cutMenuItem;
     private javax.swing.JMenuItem deleteMenuItem;
-    private javax.swing.JDesktopPane desktopPane;
+    private javax.swing.JDesktopPane dpn_menu;
     private javax.swing.JMenuItem exitMenuItem;
     private javax.swing.JMenuBar menuBar;
     private javax.swing.JMenu mnAjuda;

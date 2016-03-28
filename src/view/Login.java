@@ -6,6 +6,9 @@
 package view;
 
 import java.awt.Dimension;
+import javax.swing.JDesktopPane;
+import javax.swing.JInternalFrame;
+
 
 /**
  *
@@ -13,14 +16,18 @@ import java.awt.Dimension;
  */
 public class Login extends javax.swing.JInternalFrame
 {
+    private final JDesktopPane painelx;
 
     /**
      * Creates new form Login
      */
-    public Login()
+    public Login(JDesktopPane x)
     {
+        painelx = x;
         initComponents();
+        setTitle("Login");
     }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -124,14 +131,12 @@ public class Login extends javax.swing.JInternalFrame
     
     private void btn_entrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_entrarActionPerformed
         Usuario U = new Usuario();
+        painelx.add(U);
+        U.setSize(500,500);
         U.setVisible(true);
-        this.setVisible(false);
+        this.setVisible(false);  
     }//GEN-LAST:event_btn_entrarActionPerformed
-    public void setPosicao()
-    {
-        Dimension d = this.getDesktopPane().getSize();
-        this.setLocation((d.width - this.getSize().width) / 2, (d.height - this.getHeight()));
-    }
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btn_entrar;
