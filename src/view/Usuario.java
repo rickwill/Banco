@@ -43,8 +43,8 @@ public class Usuario extends javax.swing.JInternalFrame
         btn_transferencia = new javax.swing.JButton();
         btn_extrato = new javax.swing.JButton();
         bnt_saldo = new javax.swing.JButton();
-        lbl_imagen = new javax.swing.JLabel();
-        lbl_bem_vindo = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         jlb_sair = new javax.swing.JLabel();
 
         jLabel5.setText("jLabel5");
@@ -62,9 +62,9 @@ public class Usuario extends javax.swing.JInternalFrame
 
         bnt_saldo.setText("Saldo");
 
-        lbl_imagen.setText("Imagen");
+        jLabel2.setText("Imagen");
 
-        lbl_bem_vindo.setText("Bem vindo");
+        jLabel3.setText("Bem vindo");
 
         jlb_sair.setText("Sair");
         jlb_sair.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -89,9 +89,9 @@ public class Usuario extends javax.swing.JInternalFrame
                         .addComponent(jlb_sair)
                         .addContainerGap())
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(lbl_bem_vindo, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 205, Short.MAX_VALUE)
-                        .addComponent(lbl_imagen, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -99,8 +99,8 @@ public class Usuario extends javax.swing.JInternalFrame
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(lbl_bem_vindo))
-                    .addComponent(lbl_imagen, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jLabel3))
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(bnt_saldo)
@@ -136,9 +136,9 @@ public class Usuario extends javax.swing.JInternalFrame
     private javax.swing.JButton bnt_saldo;
     private javax.swing.JButton btn_extrato;
     private javax.swing.JButton btn_transferencia;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jlb_sair;
-    private javax.swing.JLabel lbl_bem_vindo;
-    private javax.swing.JLabel lbl_imagen;
     // End of variables declaration//GEN-END:variables
 }

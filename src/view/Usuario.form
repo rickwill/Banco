@@ -43,9 +43,9 @@
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
-                      <Component id="lbl_bem_vindo" min="-2" pref="83" max="-2" attributes="0"/>
+                      <Component id="jLabel3" min="-2" pref="83" max="-2" attributes="0"/>
                       <EmptySpace pref="205" max="32767" attributes="0"/>
-                      <Component id="lbl_imagen" min="-2" pref="69" max="-2" attributes="0"/>
+                      <Component id="jLabel2" min="-2" pref="69" max="-2" attributes="0"/>
                   </Group>
               </Group>
           </Group>
@@ -57,9 +57,9 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="lbl_bem_vindo" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <Component id="lbl_imagen" alignment="0" min="-2" pref="65" max="-2" attributes="0"/>
+                  <Component id="jLabel2" alignment="0" min="-2" pref="65" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
@@ -94,12 +94,12 @@
         <Property name="text" type="java.lang.String" value="Saldo"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="lbl_imagen">
+    <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
         <Property name="text" type="java.lang.String" value="Imagen"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="lbl_bem_vindo">
+    <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
         <Property name="text" type="java.lang.String" value="Bem vindo"/>
       </Properties>
