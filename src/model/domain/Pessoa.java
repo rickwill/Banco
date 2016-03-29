@@ -3,27 +3,23 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
 package model.domain;
 
 import java.util.Objects;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 import javax.persistence.Table;
 
 /**
  * @author RickWill, Nandão & UlysS.
  */
+
 @Entity
 @Table(name = "TB_PESSOA")
-public class Pessoa 
+public class Pessoa extends Usuario
 {
     //Atributos
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
     @Column(name = "PESSOA_NM",length = 30,nullable = true)
     private String nome;
     @Column(name = "PESSOA_RUA",length = 30,nullable = true)
@@ -177,17 +173,10 @@ public class Pessoa
     {
         this.celular = celular;
     }
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-    
     //Outros Métodos
     public void imprimirPessoaBasico()
     {
+        System.out.println("Usuario: " + super.getUser());
         System.out.println("Nome: " + getNome() );
         System.out.println("CPF: " + getCpf());
         System.out.println("RG: " + getRg());
@@ -195,6 +184,7 @@ public class Pessoa
     }
     public void imprimirPessoa()
     {
+        System.out.println("Usuario: " + super.getUser());
         System.out.println("Nome: " + getNome() );
         System.out.println("CPF: " + getCpf());
         System.out.println("RG: " + getRg());

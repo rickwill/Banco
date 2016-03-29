@@ -3,6 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
 package model.dao;
 
 import javax.persistence.EntityManager;
@@ -10,9 +11,9 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
 /**
- *
- * @author Richard
+ * @author RickWill, Nandão & UlysS
  */
+
 public class Conexao
 {
     private static EntityManagerFactory emf;

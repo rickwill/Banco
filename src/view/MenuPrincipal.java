@@ -65,6 +65,11 @@ public class MenuPrincipal extends javax.swing.JFrame {
                 openMenuItemMouseClicked(evt);
             }
         });
+        openMenuItem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                openMenuItemActionPerformed(evt);
+            }
+        });
         mnArquivo.add(openMenuItem);
 
         saveMenuItem.setMnemonic('s');
@@ -147,6 +152,10 @@ public class MenuPrincipal extends javax.swing.JFrame {
     private void openMenuItemMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_openMenuItemMouseClicked
             // TODO add your handling code here:
     }//GEN-LAST:event_openMenuItemMouseClicked
+
+    private void openMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_openMenuItemActionPerformed
+    
+    }//GEN-LAST:event_openMenuItemActionPerformed
 
     /**
      * @param args the command line arguments

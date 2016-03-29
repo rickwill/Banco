@@ -3,6 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
 package control;
 
 import java.beans.PropertyChangeListener;
@@ -14,9 +15,9 @@ import model.domain.Usuario;
 import org.jdesktop.observablecollections.ObservableCollections;
 
 /**
- *
- * @author Richard
+ * @author RickWill, Nandão & UlysS
  */
+
 public final class UsuarioControl
 {
     private final PropertyChangeSupport propertyChangeSupport = 
@@ -41,7 +42,7 @@ public final class UsuarioControl
 
     public void novo()
     {
-        setUsuarioDigitado(new Usuario() );
+        setUsuarioDigitado(new Usuario());
     }
 
     public void pesquisar()

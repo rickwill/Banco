@@ -3,6 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
 package model.domain;
 
 import javax.persistence.Column;
@@ -12,6 +13,7 @@ import javax.persistence.Table;
 /**
  * @author RickWill, Nandão & UlysS
  */
+
 @Entity
 @Table(name = "TB_CLIENTE")
 public class Cliente extends Pessoa

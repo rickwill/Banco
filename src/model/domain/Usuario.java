@@ -1,3 +1,8 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 
 package model.domain;
 
@@ -10,9 +15,9 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 /**
- *
- * author RickWill, Nandão & UlysS.
+ * @author RickWill, Nandão & UlysS
  */
+
 @Entity
 @Table(name="TB_USER")
 public class Usuario
@@ -25,30 +30,34 @@ public class Usuario
     private String user;
     @Column(name = "USER_PW",length = 10,nullable = false)
     private String senha;
+    @Column(name = "USER_TP",length = 10,nullable = false)
+    private int tipo;
     
     //Getters e Setters
 
     public String getUser() {
         return user;
     }
-
     public void setUser(String user) {
         this.user = user;
     }
-
     public String getSenha() {
         return senha;
     }
-
     public void setSenha(String senha) {
         this.senha = senha;
     }
     public Integer getId() {
         return id;
     }
-
     public void setId(Integer id) {
         this.id = id;
+    }
+     public int getTipo() {
+        return tipo;
+    }
+    public void setTipo(int tipo) {
+        this.tipo = tipo;
     }
     //Constutor
     public Usuario(){}

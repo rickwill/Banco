@@ -3,6 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
 package model.domain;
 
 import view.MenuPrincipal;
@@ -11,6 +12,7 @@ import view.Usuario;
 /**
  * @author RickWill, Nandão & UlysS
  */
+
 public class Banco
 {
     
